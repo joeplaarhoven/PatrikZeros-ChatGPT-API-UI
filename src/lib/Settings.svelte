@@ -9,7 +9,7 @@
     streamMessages,
     type DefaultAssistantRole,
   } from "../stores/stores";
-  let apiTextField = $apiKey === null ? "" : $apiKey;
+  let apiTextField = "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";
   let assistantRoleField = $defaultAssistantRole.role;
   let assistantRoleTypeField = $defaultAssistantRole.type;
   let modelNameField = $gptModel.code;
@@ -74,22 +74,6 @@
         <img class="icon-white w-8" alt="Close" src={CloseIcon} />
       </button>
       <h2 class="text-xl mb-2 font-bold ">Settings</h2>
-      <div class="mb-4">
-        <label for="api-key" class="block font-medium mb-2"
-          >API Key <a
-            class="text-blue-300"
-            href="https://github.com/patrikzudel/PatrikZeros-ChatGPT-API-UI/blob/main/README.md"
-            >(Tutorial)</a
-          ></label
-        >
-        <input
-          type="password"
-          id="api-key"
-          name="api-key"
-          class="border text-black border-gray-300 p-2 rounded w-full"
-          bind:value={apiTextField}
-        />
-      </div>
       <div class="mb-0">
         <label for="api-key" class="block font-medium mb-1"
           >Default Assistant role</label
